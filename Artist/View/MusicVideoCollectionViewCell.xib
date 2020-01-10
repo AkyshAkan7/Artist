@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MusicVideoCollectionViewCell" customModule="Artist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="239"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="239"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cwA-Dj-Kne">
+                        <rect key="frame" x="0.0" y="0.0" width="330" height="200"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="330" id="l6e-9q-4aH"/>
+                            <constraint firstAttribute="height" constant="200" id="zZo-K4-ga4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-n1-7GW">
+                        <rect key="frame" x="0.0" y="210" width="39.5" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Xk-Mi-vs1">
+                        <rect key="frame" x="155" y="91" width="20" height="20"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6ZN-sl-Qg7"/>
+                            <constraint firstAttribute="width" constant="20" id="PAg-Ey-YES"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bw8-Cf-5bK">
+                        <rect key="frame" x="125" y="76" width="80" height="47.5"/>
+                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="TGw-0g-TTG"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bw8-Cf-5bK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="75" id="1mb-Kh-Vca"/>
+                <constraint firstItem="2Xk-Mi-vs1" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="155" id="4rL-Jn-vTo"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="bw8-Cf-5bK" secondAttribute="trailing" constant="125" id="EWo-bq-VLS"/>
+                <constraint firstAttribute="trailing" secondItem="cwA-Dj-Kne" secondAttribute="trailing" id="NWr-vd-6oL"/>
+                <constraint firstItem="2Xk-Mi-vs1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="91" id="Wtf-fl-i9h"/>
+                <constraint firstItem="ce6-n1-7GW" firstAttribute="top" secondItem="cwA-Dj-Kne" secondAttribute="bottom" constant="10" id="YNk-aR-akX"/>
+                <constraint firstAttribute="bottom" secondItem="ce6-n1-7GW" secondAttribute="bottom" id="c22-LV-Hmm"/>
+                <constraint firstItem="cwA-Dj-Kne" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cQH-z4-dkD"/>
+                <constraint firstItem="cwA-Dj-Kne" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dX8-Pl-hvx"/>
+                <constraint firstItem="bw8-Cf-5bK" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="125" id="kaC-S8-RFp"/>
+                <constraint firstItem="ce6-n1-7GW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tk2-aC-clT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="330" height="239"/>
+            <connections>
+                <outlet property="musicVideoImageView" destination="cwA-Dj-Kne" id="BAh-Xy-zpM"/>
+                <outlet property="musicVideoNameLabel" destination="ce6-n1-7GW" id="gq1-Oh-lT5"/>
+            </connections>
+            <point key="canvasLocation" x="340.57971014492756" y="242.07589285714283"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play.rectangle.fill" catalog="system" width="64" height="46"/>
+    </resources>
+</document>
